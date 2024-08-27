@@ -109,7 +109,7 @@ const FFXIVItemPrice: React.FC<FFXIVItemPriceProps> = ({ itemId = 5530, itemName
       </table>
       <footer>
       {dataSource === 'dc' ? 'Datacenter Fallback ' : dataSource === 'region' ? 'Regional Fallback ' : ''}
-      {selectedWorld} Marketboard Data provided by Universalis API. <a className="eorzeadb_link" href="#" onClick={(e) => { e.preventDefault(); fetchData(); }}>Click here to reload data</a>
+      {selectedWorld} Marketboard Data provided by Universalis API. <a className="eorzeadb_link" href="#" onClick={(e: React.MouseEvent<HTMLAnchorElement>) => { e.preventDefault(); fetchData(); }}>Click here to reload data</a>
         <br />
       </footer>
     </div>

@@ -47,7 +47,7 @@ const FFXIVWorldSelector: React.FC<FFXIVWorldSelectorProps> = ({ message = "Sele
       <label htmlFor="world-select" className="ffxiv-label">{message}</label>
       <select id="world-select" onChange={handleWorldChange} value={selectedWorld || ''} className="ffxiv-select">
         <option value="">--Please choose an option--</option>
-        {worlds.map((world) => (
+        {worlds.map((world: World) => (
           <option key={world.id} value={world.name}>
             {world.name}
           </option>
