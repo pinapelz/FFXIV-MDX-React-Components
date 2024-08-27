@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FFXIVItemPrice from '../components/FFXIVItemPrice';
+import FFXIVWorldSelector from '../components/FFXIVWorldSelector';
+---
+
+<Layout title="FFXIV-MDX-React-Components">
+	<h1>FFXIV-MDX-React-Components</h1>
+	<p>FFXIV-MDX-React-Components is a collection of components for Final Fantasy XIV related data. It is built with MDX and React.</p>
+	<FFXIVWorldSelector client:load message="Set your home world to get crowdsourced marketboard information!" />
+	<br/>
+	<FFXIVItemPrice client:load itemId={10393} itemName="Thavnairian Bustier" itemImageUrl="https://www.garlandtools.org/files/icons/item/42441.png" />
+</Layout>
+
