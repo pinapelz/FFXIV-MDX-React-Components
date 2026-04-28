@@ -1,3 +1,4 @@
+# Moved to https://git.moekyun.me/pinapelz/FFXIV-MDX-React-Components
 # FFXIV-MDX-React-Components
 This is a set of custom made React components meant to be used on Final Fantasy XIV related text heavy content, specifically content written in the MDX format.
 
